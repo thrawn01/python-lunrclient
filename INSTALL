@@ -1,0 +1,6 @@
+# Instructions for build python-lunrclient-1.0.0.deb package
+
+> tar -zcvf python-lunrclient_1.0.0.orig.tar.gz python-lunrclient --exclude=.git --exclude=debian --exclude=.gitignore --exclude=*.pyc
+> cd python-lunrclient
+> debuild --no-tgz-check --no-lintian -uc -us
+

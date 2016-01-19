@@ -1,0 +1,24 @@
+python-lunrclient (1.1.0-1ubuntu1) precise; urgency=low
+
+  * Removed dependency on python-cinderclient
+
+ -- Derrick J Wippler <vagrant@vagrant-ubuntu-precise-64>  Mon, 18 Jan 2016 13:36:00 +0000
+
+python-lunrclient (1.0.2-1ubuntu1) precise; urgency=low
+
+  * 'node get' now shows the tenant-id of each volume
+  * code is now pep8 compliant
+
+ -- Derrick J Wippler <vagrant@vagrant-ubuntu-precise-64>  Wed, 15 Apr 2015 17:05:00 +0000
+
+python-lunrclient (1.0.1-1ubuntu1) precise; urgency=low
+
+  * 'volume list' can now filter by restore_of
+
+ -- Derrick J Wippler <thrawn01@gmail.com>  Mon, 19 Jan 2015 11:10:19 -0600
+
+python-lunrclient (1.0.0-1) precise; urgency=low
+
+  * source package automatically created by stdeb 0.6.0+git
+
+ -- Derrick J Wippler <thrawn01@gmail.com>  Fri, 10 Jan 2014 14:45:04 -0600

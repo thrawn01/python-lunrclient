@@ -1,0 +1,4 @@
+requests>=2.9.1
+requests_mock>=0.7.0
+prettytable>=0.7
+six>=1.10.0
