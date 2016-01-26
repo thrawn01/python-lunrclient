@@ -2,9 +2,11 @@
 
 from setuptools import setup, find_packages
 
+from lunrclient import version
+
 setup(
     name='python-lunrclient',
-    version='1.1.0',
+    version=version.version,
     description='LunrClient',
     license='Apache License (2.0)',
     author='Derrick J Wippler',
