@@ -6,7 +6,7 @@ exec(open('lunrclient/version.py').read())
 
 setup(
     name='python-lunrclient',
-    version=__version__,
+    version=version,
     description='LunrClient',
     license='Apache License (2.0)',
     author='Derrick J Wippler',
