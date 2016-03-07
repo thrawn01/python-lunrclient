@@ -79,7 +79,7 @@ List the available volumes on the storage node:
 
 Delete a volume:
 
-    storage volume delete my-volume
+    $ storage volume delete my-volume
 
 ## Storage Tools
 
