@@ -17,7 +17,8 @@
 
 from __future__ import print_function
 
-from lunrclient import StorageBackup, StorageVolume, LunrError
+from lunrclient.storage import StorageBackup, StorageVolume
+from lunrclient.base import LunrError
 import time
 import uuid
 import sys
