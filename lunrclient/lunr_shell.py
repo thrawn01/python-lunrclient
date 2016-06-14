@@ -14,7 +14,7 @@
 
 from __future__ import print_function
 
-from lunrclient import LunrHttpError, LunrError, response
+from lunrclient.base import LunrHttpError, LunrError, response
 from lunrclient.subcommand import SubCommand, SubCommandParser, opt, noargs
 from lunrclient.client import LunrClient, StorageClient, Auth
 from lunrclient.displayable import Displayable

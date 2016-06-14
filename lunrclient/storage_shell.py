@@ -18,7 +18,7 @@ from lunrclient.subcommand import SubCommand, SubCommandParser, opt, noargs
 from lunrclient.client import StorageClient
 from lunrclient.displayable import Displayable
 from lunrclient.shared import Env, ShellError
-from lunrclient import LunrError, LunrHttpError
+from lunrclient.base import LunrError, LunrHttpError
 from pprint import pprint
 
 try:

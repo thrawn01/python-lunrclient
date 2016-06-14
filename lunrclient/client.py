@@ -14,11 +14,12 @@
 
 from __future__ import print_function
 
-from lunrclient import LunrVolume, LunrBackup, LunrAccount,\
-    LunrNode, LunrExport, StorageVolume, StorageStatus,\
-    StorageExport, StorageBackup, BaseAPI, LunrError
 import os
 import json
+
+from lunrclient.lunr import LunrVolume, LunrBackup, LunrAccount, LunrNode, LunrExport
+from lunrclient.storage import StorageVolume, StorageStatus, StorageExport, StorageBackup
+from lunrclient.base import BaseAPI, LunrError
 
 
 class LunrClient(object):
