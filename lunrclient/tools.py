@@ -197,11 +197,11 @@ class Tools(SubCommand):
             snapshot = volume.create_snapshot(src, id, timestamp)
 
             # For testing non-snapshot speeds
-            #snapshot = volume.get(src)
-            #snapshot['backup_id'] = id
-            #snapshot['origin'] = src
-            #snapshot['timestamp'] = 1338410885.0
-            #del snapshot['volume']
+            # snapshot = volume.get(src)
+            # snapshot['backup_id'] = id
+            # snapshot['origin'] = src
+            # snapshot['timestamp'] = 1338410885.0
+            # del snapshot['volume']
 
             print("Created snap-shot: ", pprint(snapshot))
 
