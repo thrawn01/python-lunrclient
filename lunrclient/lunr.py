@@ -1,3 +1,18 @@
+# Copyright 2011-2016 Rackspace US, Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+from lunrclient.base import BaseAPI
 import uuid
 
 
@@ -34,10 +49,9 @@ class LunrVolume(LunrAPI):
         create a volume
         """
         volume_id = volume_id or str(uuid.uuid4())
-        params = { 'volume_type_name': vtype,
-                   'size': size,
-                   'affinity': affinity
-        }
+        params = {'volume_type_name': vtype,
+                  'size': size,
+                  'affinity': affinity}
         return self.http_put('/volumes/%s' % volume_id,
                              params=self.unused(params))
 
@@ -210,9 +224,10 @@ class LunrExport(LunrAPI):
         update an export
         """
         # These arguments are allowed
-        self.allowed('update', kwargs, ['status', 'instance_id',
-                     'mountpoint', 'ip', 'initiator', 'session_ip',
-                     'session_initiator'])
+        self.allowed('update', kwargs,
+                     ['status', 'instance_id',
+                      'mountpoint', 'ip', 'initiator', 'session_ip',
+                      'session_initiator'])
         # Remove parameters that are None
         params = self.unused(kwargs)
         return self.http_post('/volumes/%s/export' % volume_id, params=params)

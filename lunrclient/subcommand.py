@@ -1,17 +1,3 @@
-# Copyright 2011-2016 Rackspace US, Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#    http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 from __future__ import print_function
 
 from argparse import ArgumentParser, RawDescriptionHelpFormatter
@@ -98,12 +84,12 @@ class SubCommandParser(object):
         return self.help()
 
     def bash_completion_script(self, prog):
-        print('_%(prog)s() {\n'\
-            '  local cur="${COMP_WORDS[COMP_CWORD]}"\n'\
-            '  local list=$(%(prog)s --bash-completion $COMP_LINE)\n'\
-            '  COMPREPLY=($(compgen -W "$list" $cur))\n'\
-            '}\n'\
-            'complete -F _%(prog)s %(prog)s\n' % locals())
+        print('_%(prog)s() {\n'
+              '  local cur="${COMP_WORDS[COMP_CWORD]}"\n'
+              '  local list=$(%(prog)s --bash-completion $COMP_LINE)\n'
+              '  COMPREPLY=($(compgen -W "$list" $cur))\n'
+              '}\n'
+              'complete -F _%(prog)s %(prog)s\n' % locals())
 
     def bash_completion(self, args):
         # args = ['--bash-completion', '%prog', 'sub-command', 'command']
