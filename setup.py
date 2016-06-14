@@ -14,23 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from setuptools import setup, find_packages
-
-exec(open('lunrclient/version.py').read())
+from setuptools import setup
 
 setup(
-    name='python-lunrclient',
-    version=version,
-    description='LunrClient',
-    license='Apache License (2.0)',
-    author='Derrick J Wippler',
-    author_email='thrawn01@gmail.com',
-    url='https://github.com/rackerlabs/python-lunrclient',
-    packages=find_packages(exclude=['test']),
-    test_suite='nose.collector',
-    install_requires=['requests', 'prettytable>=0.7'],
-    entry_points={
-        'console_scripts': ['storage = lunrclient.storage_shell:main',
-                            'lunr = lunrclient.lunr_shell:main']
-    }
+    setup_requires=['pbr>=1.8'],
+    pbr=True
 )
