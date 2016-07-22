@@ -1,0 +1,33 @@
+CHANGES
+=======
+
+1.3.1
+-----
+
+* Fixed pip install, added tox and travis-ci
+* readme: convert to rst
+* setup: fix environment classifier
+
+1.3.0
+-----
+
+* Fixed flake errors and imported BaseAPI into lunr.py
+* setup: use pbr
+* version: bump to 1.2.3
+* lunrclient.__init__: empty
+
+v1.2.2
+------
+
+* add prompt to doc for consistency
+* bump version
+* Tidy files for release
+* Changed __version__ to version
+* Fixed loading version number
+* Version number is now included in the package
+* Updated author info and url
+
+1.1.0
+-----
+
+* Intial Commit
