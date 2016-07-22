@@ -5,3 +5,12 @@
 target/
 .class/
 *.egg-info/
+.cache/
+.eggs/
+.idea/
+.python-version
+build/
+dist/
+.coverage
+.tox/
+

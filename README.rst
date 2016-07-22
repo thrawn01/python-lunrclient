@@ -1,3 +1,6 @@
+.. image:: https://img.shields.io/travis/rackerlabs/python-lunrclient/master.svg   :target:
+
+
 LunrClient
 ----------
 
