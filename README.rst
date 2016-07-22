@@ -1,5 +1,5 @@
-.. image:: https://img.shields.io/travis/rackerlabs/python-lunrclient/master.svg   :target:
-
+.. image:: https://travis-ci.org/rackerlabs/python-lunrclient.svg?branch=master
+    :target: https://travis-ci.org/rackerlabs/python-lunrclient
 
 LunrClient
 ----------
